@@ -1,6 +1,5 @@
 import { createStore } from "vuex";
 import AuthService from "../service/auth.service";
-
 let user = JSON.parse(localStorage.getItem("user"))?.status || null;
 
 const initialState = { status: { loggedIn: !!user }, user };

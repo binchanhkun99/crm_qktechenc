@@ -71,6 +71,7 @@ const onSubmit = () => {
       }, 3000)}
   });
 };
+
 </script>
 
 <template>
@@ -201,7 +202,7 @@ const onSubmit = () => {
     </VDialog>
 
   </div>
-  
+
 </template>
 
 <style lang="scss">

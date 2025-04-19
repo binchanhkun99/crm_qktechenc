@@ -10,10 +10,10 @@ export default [
   // },
   { heading: 'Hệ thống' },
   {
-    title: 'Quản lý Events',
+    title: 'Logo công ty',
     icon: { icon: 'bx-file' },
     children: [
-      { title: 'list', to: 'apps-events-list' },
+      { title: 'Sửa Logo', to: 'apps-logo' },
       // { title: 'Banner', to: { name: 'apps-banner'} },
     ],
   },
