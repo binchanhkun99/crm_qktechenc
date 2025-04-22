@@ -12,9 +12,9 @@ const request = axios.create({
 export const setAuth = () => {
   const user = localStorage.getItem('user');
   if (user) {
-    const { access_token } = JSON.parse(user);
-    if (access_token) {
-      request.defaults.headers.common['Authorization'] = `Bearer ${access_token}`;
+    const { token } = JSON.parse(user);
+    if (token) {
+      request.defaults.headers.common['Authorization'] = `Bearer ${token}`;
     }
   }
 };
@@ -37,18 +37,6 @@ request.interceptors.request.use(
   (error) => Promise.reject(error)
 );
 
-// Interceptor để xử lý lỗi 401
-request.interceptors.response.use(
-  (response) => response,
-  (error) => {
-    if (error.response?.status === 401) {
-      clearAuth();
-      localStorage.removeItem('user');
-      // Chuyển hướng đến trang login (tùy chọn)
-      window.location.href = '/login';
-    }
-    return Promise.reject(error);
-  }
-);
+
 
 export default request;
