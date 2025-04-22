@@ -56,13 +56,13 @@
         <a-form layout="vertical">
           <a-row :gutter="16">
             <a-col :span="12">
-              <a-form-item label="Tiêu đề (VI)">
+              <a-form-item label="Tiêu đề (VN)">
                 <a-input v-model:value="editForm.title" />
               </a-form-item>
-              <a-form-item label="Trích đoạn (VI)">
+              <a-form-item label="Trích đoạn (VN)">
                 <a-input v-model:value="editForm.exceprt" />
               </a-form-item>
-              <a-form-item label="Nội dung (VI)">
+              <a-form-item label="Nội dung (VN)">
                 <a-textarea v-model:value="editForm.content" rows="4" />
               </a-form-item>
               <a-form-item label="Tháng">
@@ -71,13 +71,13 @@
             </a-col>
 
             <a-col :span="12">
-              <a-form-item label="Tiêu đề (EN)">
+              <a-form-item label="Tiêu đề (Tiếng Anh)">
                 <a-input v-model:value="editForm.title_en" />
               </a-form-item>
-              <a-form-item label="Trích đoạn (EN)">
+              <a-form-item label="Trích đoạn (Tiếng Anh)">
                 <a-input v-model:value="editForm.exceprt_en" />
               </a-form-item>
-              <a-form-item label="Nội dung (EN)">
+              <a-form-item label="Nội dung (Tiếng Anh)">
                 <a-textarea v-model:value="editForm.content_en" rows="4" />
               </a-form-item>
             </a-col>
@@ -85,25 +85,25 @@
 
           <a-row :gutter="16">
             <a-col :span="12">
-              <a-form-item label="Tiêu đề (ZH)">
+              <a-form-item label="Tiêu đề (Trung Quốc)">
                 <a-input v-model:value="editForm.title_zh" />
               </a-form-item>
-              <a-form-item label="Trích đoạn (ZH)">
+              <a-form-item label="Trích đoạn (Trung Quốc)">
                 <a-input v-model:value="editForm.exceprt_zh" />
               </a-form-item>
-              <a-form-item label="Nội dung (ZH)">
+              <a-form-item label="Nội dung (Trung Quốc)">
                 <a-textarea v-model:value="editForm.content_zh" rows="4" />
               </a-form-item>
             </a-col>
 
             <a-col :span="12">
-              <a-form-item label="Tiêu đề (KM)">
+              <a-form-item label="Tiêu đề (Cambodi)">
                 <a-input v-model:value="editForm.title_km" />
               </a-form-item>
-              <a-form-item label="Trích đoạn (KM)">
+              <a-form-item label="Trích đoạn (Cambodi)">
                 <a-input v-model:value="editForm.exceprt_km" />
               </a-form-item>
-              <a-form-item label="Nội dung (KM)">
+              <a-form-item label="Nội dung (Cambodi)">
                 <a-textarea v-model:value="editForm.content_km" rows="4" />
               </a-form-item>
             </a-col>
