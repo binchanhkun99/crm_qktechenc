@@ -3,7 +3,7 @@ import store from "@/store";
 import { VNodeRenderer } from "@layouts/components/VNodeRenderer";
 import { themeConfig } from "@themeConfig";
 import {
-requiredValidator
+  requiredValidator
 } from "@validators";
 import { useRouter } from "vue-router";
 import { VForm } from "vuetify/components/VForm";

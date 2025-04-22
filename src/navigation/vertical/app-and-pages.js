@@ -10,33 +10,33 @@ export default [
   // },
   { heading: 'Hệ thống' },
   {
-    title: 'Logo công ty',
+    title: 'Quản lý Logo',
     icon: { icon: 'bx-file' },
     children: [
-      { title: 'Sửa Logo', to: 'apps-logo' },
+      { title: 'Sửa logo', to: 'apps-logo' },
       // { title: 'Banner', to: { name: 'apps-banner'} },
     ],
   },
   {
-    title: 'Cấu hình',
+    title: 'Quản lí bài viết',
     icon: { icon: 'bx-paint' },
     children: [
-      { title: 'Event', to: 'apps-gptvsdfs' },
+      { title: 'Chỉnh sửa bài viết', to: 'apps-article' },
     ],
   },
   {
-    title: 'Thông tin liên hệ',
+    title: 'Quản lí tin tức',
     icon: { icon: 'bxs-contact' },
     children: [
-      { title: 'Chỉnh sửa', to: 'apps-prompt-list' },
+      { title: 'Chỉnh sửa tin tức', to: 'apps-news' },
     ],
   },
-  {
-    title: 'Phân Tích Dữ Liệu',
-    icon: { icon: 'bxs-layer' },
-    children: [
-      { title: 'Phân tích', to: 'apps-prompt-chude' },
-    ],
-  },
+  // {
+  //   title: 'Phân Tích Dữ Liệu',
+  //   icon: { icon: 'bxs-layer' },
+  //   children: [
+  //     { title: 'Phân tích', to: 'apps-prompt-chude' },
+  //   ],
+  // },
 
 ]
