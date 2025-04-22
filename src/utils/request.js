@@ -29,7 +29,7 @@ request.interceptors.request.use(
   (config) => {
     const url = config.url || '';
     // Không thêm Authorization header cho /login và /register
-    if (url.endsWith('/login') || url.endsWith('/register')) {
+    if (url.endsWith('/login') || url.endsWith('/register')) {      
       delete config.headers['Authorization'];
     }
     return config;
@@ -37,6 +37,7 @@ request.interceptors.request.use(
   (error) => Promise.reject(error)
 );
 
+setAuth();
 
 
 export default request;

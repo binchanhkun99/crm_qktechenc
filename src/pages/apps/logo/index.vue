@@ -26,7 +26,7 @@
 >
   <a-button>
     <upload-outlined />
-    Chọn Logo
+    Chọn Logo mới
   </a-button>
 </a-upload>
 
