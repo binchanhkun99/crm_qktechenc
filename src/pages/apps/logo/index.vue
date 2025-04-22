@@ -1,38 +1,53 @@
 <template> 
+<div>
   <VAlert v-if="showError" type="error">
     {{ errorMessage }}
   </VAlert>
   <VAlert v-if="showSuccess" type="success">
     {{ successMessage }}
   </VAlert>
+  <VRow>  <ThongKeUser />
+  </VRow>
+  <VRow>
+    <div>
 
-  <div>
-    <a-image
-      :width="200"
-      :src="logoUrl"
-      alt="Logo"
-    />
-    <a-upload
-      v-model:file-list="fileList"
-      :before-upload="handleUpload"
-      :max-count="1"
-      list-type="picture"
-      class="upload-list-inline"
-      :show-upload-list="{ showRemoveIcon: true }"
-    >
-      <a-button>
-        <upload-outlined />
-        Chọn Logo
-      </a-button>
-    </a-upload>
+<a-image
+  :width="200"
+  :src="logoUrl"
+  alt="Logo"
+/>
+<a-upload
+  v-model:file-list="fileList"
+  :before-upload="handleUpload"
+  :max-count="1"
+  list-type="picture"
+  class="upload-list-inline"
+  :show-upload-list="{ showRemoveIcon: true }"
+>
+  <a-button>
+    <upload-outlined />
+    Chọn Logo
+  </a-button>
+</a-upload>
 
-    <VBtn color="success" type="primary" class="mt-4" @click="saveLogo">
-      Lưu Logo
-    </VBtn>
-  </div>
+
+<VBtn color="success" @click="saveLogo">
+  Upload
+  <VIcon
+    end
+    icon="bx-cloud-upload"
+  />
+</VBtn>
+</div>
+  </VRow>
+</div>
+  
+
 </template>
 
 <script setup>
+import ThongKeUser from "@/pages/components/thongke.vue";
+
 import { UploadOutlined } from '@ant-design/icons-vue';
 import { onMounted, ref } from 'vue';
 

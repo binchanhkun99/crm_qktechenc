@@ -1,59 +1,6 @@
 <template>
   <div style="padding: 20px">
     <!-- FORM THÊM BÀI VIẾT -->
-    <a-form :model="formState" layout="vertical" @submit.prevent="handleSubmit">
-      <a-row :gutter="16">
-        <a-col :span="8">
-          <a-form-item label="Tiêu đề">
-            <a-input v-model:value="formState.title" />
-          </a-form-item>
-        </a-col>
-        <a-col :span="4">
-          <a-form-item label="Ngày">
-            <a-input v-model:value="formState.day" />
-          </a-form-item>
-        </a-col>
-        <a-col :span="4">
-          <a-form-item label="Tháng">
-            <a-input v-model:value="formState.month" />
-          </a-form-item>
-        </a-col>
-        <a-col :span="4">
-          <a-form-item label="Tác giả">
-            <a-input v-model:value="formState.author" />
-          </a-form-item>
-        </a-col>
-        <a-col :span="24">
-        <a-form-item label="Ảnh bài viết">
-          <a-upload
-            list-type="picture-card"
-            :show-upload-list="false"
-            :custom-request="customUpload"
-          >
-            <img v-if="formState.image" :src="formState.image" alt="ImgArticle" style="width: 100%" />
-            <div v-else>
-              <PlusOutlined />
-              <div style="margin-top: 8px">Tải ảnh</div>
-            </div>
-          </a-upload>
-        </a-form-item>
-      </a-col>
-        <a-col :span="12">
-          <a-form-item label="Trích đoạn">
-            <a-input v-model:value="formState.exceprt" />
-          </a-form-item>
-        </a-col>
-        <a-col :span="24">
-          <a-form-item label="Nội dung">
-            <a-textarea v-model:value="formState.content" rows="4" />
-          </a-form-item>
-        </a-col>
-      </a-row>
-      <VBtn color="primary" type="primary" html-type="submit">
-        Thêm bài viết
-      </VBtn>
-    </a-form>
-
     <br /><br />
 
     <!-- BẢNG BÀI VIẾT -->
@@ -266,7 +213,6 @@ const columns: TableColumnsType = [
             color: 'error',
             onClick: () => deleteArticle(record.key)
           },
-          { default: () => '🗑️ Xoá' }
         )
       ]
     })

@@ -1,6 +1,4 @@
 <script setup>
-import { PerfectScrollbar } from 'vue3-perfect-scrollbar'
-import { VNodeRenderer } from './VNodeRenderer'
 import {
   injectionKeyIsVerticalNavHovered,
   useLayouts,
@@ -11,6 +9,8 @@ import {
   VerticalNavSectionTitle,
 } from '@layouts/components'
 import { config } from '@layouts/config'
+import { PerfectScrollbar } from 'vue3-perfect-scrollbar'
+import { VNodeRenderer } from './VNodeRenderer'
 
 const props = defineProps({
   tag: {
@@ -97,12 +97,12 @@ const handleNavScroll = evt => {
           <VNodeRenderer :nodes="config.app.logo" />
 
           <Transition name="vertical-nav-app-title">
-            <h1
+            <h3
               v-show="!hideTitleAndIcon"
               class="leading-normal"
             >
               {{ config.app.title }}
-            </h1>
+            </h3>
           </Transition>
         </RouterLink>
         <!-- 👉 Vertical nav actions -->

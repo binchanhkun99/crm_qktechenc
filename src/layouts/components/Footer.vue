@@ -16,9 +16,8 @@
         target="_blank"
         rel="noopener noreferrer"
         class="text-primary ms-1"
-      >AiDu</a>
+      >QKTECH E&C</a>
     </span>
-    <!-- 👉 Footer: right content -->
   
   </div>
 </template>

@@ -18,7 +18,7 @@ const router = createRouter({
         if (userRole === 'client')
           return { name: 'access-control' }
         
-        return { name: 'apps-events-list', query: to.query }
+        return { name: 'apps-news', query: to.query }
       },
     },
     {
@@ -42,7 +42,7 @@ router.beforeEach((to, from, next) => {
   const publicPages = ["/login", "/home"];
   const authRequired = !publicPages.includes(to.path);
   const loggedIn = localStorage.getItem("user");
-  
+ 
   if (authRequired && !loggedIn) {
     next("/login");
   } else {
