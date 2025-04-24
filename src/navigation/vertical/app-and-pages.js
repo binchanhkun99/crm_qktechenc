@@ -31,12 +31,11 @@ export default [
       { title: 'Chỉnh sửa tin tức', to: 'apps-news' },
     ],
   },
-  // {
-  //   title: 'Phân Tích Dữ Liệu',
-  //   icon: { icon: 'bxs-layer' },
-  //   children: [
-  //     { title: 'Phân tích', to: 'apps-prompt-chude' },
-  //   ],
-  // },
-
+  {
+    title: 'Quản lí feedback',
+    icon: { icon: 'bxs-layer' },
+    children: [
+      { title: 'Chỉnh sửa feedback', to: 'apps-feedback' },
+    ],
+  },
 ]
